@@ -1,0 +1,51 @@
+
+
+
+
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+    -fx-effect: null;
+}
+
+.default-color0 .chart-area-symbol { -fx-background-color: #e9967a, #ffa07a; }
+.default-color1 .chart-area-symbol { -fx-background-color: #f0e68c, #fffacd; }
+
+.default-color0.chart-series-line { -fx-stroke: green; }
+.default-color1.chart-series-line { -fx-stroke: red; }
+
+.default-color0 .chart-series-area-line { -fx-stroke: #e9967a; }
+.default-color1 .chart-series-area-line { -fx-stroke: #f0e68c; }
+
+.default-color0 .chart-series-area-fill { -fx-fill: #ffa07aaa}
+.default-color1 .chart-series-area-fill { -fx-fill: #fffacd77; }
+
+.default-color0.chart-line-symbol { -fx-background-color: green, white; }
+.default-color1.chart-line-symbol { -fx-background-color: red, white; }
+
+/*******************************************************************************
+ *                                                                             *
+ * AreaChart                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.chart-area-symbol {
+    -fx-background-color: CHART_COLOR_1, white;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 4px; /* makes sure this remains circular */
+    -fx-padding: 3px;
+}
+.default-color0.chart-area-symbol { -fx-background-color: green, white; }
+.default-color1.chart-area-symbol { -fx-background-color: red, white; }
+.chart-series-area-line {
+    -fx-stroke: green;
+    -fx-stroke-width: 1px;
+}
+.default-color0.chart-series-area-line { -fx-stroke: green; }
+.default-color1.chart-series-area-line { -fx-stroke: red; }
+.chart-series-area-fill {
+    -fx-stroke: null;
+    -fx-fill: CHART_COLOR_1_TRANS_20;
+}
+.default-color0.chart-series-area-fill { -fx-fill: green; }
+.default-color1.chart-series-area-fill { -fx-fill: red; }
